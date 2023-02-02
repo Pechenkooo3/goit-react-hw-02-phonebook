@@ -7,7 +7,6 @@ import {
   NumberWrapper,
   ItemButton,
 } from './ContactItem.styled';
-// import { TiUser, TiDelete } from 'react-icons/ti';
 
 export default function ContactListItem({
   name,
@@ -18,8 +17,7 @@ export default function ContactListItem({
   return (
     <MainWrapper>
       <Wrapper>
-        {/* <TiUser size={25} color={'darkpurple'} /> */}
-        <ListItem>{name}:</ListItem>
+               <ListItem>{name}:</ListItem>
       </Wrapper>
       <NumberWrapper>
         <ListItem>{number}</ListItem>
