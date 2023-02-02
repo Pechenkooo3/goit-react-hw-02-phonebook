@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const InputLabel = styled.label`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   font-size: 16px;
 `;
 
@@ -13,7 +13,7 @@ export const FilterInput = styled.input`
   outline-color: aliceblue;
   padding: 5px 10px;
   font-size: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   border: none;
   border-radius: 5px;
 `;

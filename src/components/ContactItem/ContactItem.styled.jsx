@@ -13,7 +13,7 @@ export const MainWrapper = styled.div`
   box-shadow: 2px 2px 5px #928181;
   padding: 2px 5px 2px 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   &:last-child {
     margin-bottom: 0;
@@ -35,6 +35,4 @@ export const ItemButton = styled.button`
   padding: 0;
   margin: 0;
   border: none;
-  
-  
 `;
