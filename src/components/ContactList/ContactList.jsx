@@ -23,6 +23,10 @@ export default function ContactList({ contacts, deleteContact }) {
 }
 
 ContactList.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
+  contact: PropTypes.objectOf({
+    name: PropTypes.string.isRequired,
+    number: PropTypes.number.isRequired,
+    key: PropTypes.string.isRequired,
+  userId: PropTypes.string.isRequired}),
   deleteContact: PropTypes.func.isRequired,
 };

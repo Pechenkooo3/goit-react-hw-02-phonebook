@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Formik, ErrorMessage } from 'formik';
+import { Formik, ErrorMessage} from 'formik';
 import * as yup from 'yup';
 // import 'yup-phone';
 import {
@@ -18,7 +18,7 @@ const initialsValues = {
 
 const FormSchema = yup.object().shape({
   name: yup.string().min(2).required(),
-  number: yup.string().required(),
+  number: yup.number().required(),
 });
 
 export default function ContactForm({ onSubmitForm, contacts }) {
@@ -44,14 +44,14 @@ export default function ContactForm({ onSubmitForm, contacts }) {
         <AddForm>
           <InputLabel>
             Name
-            <Input type="text" name="name" placeholder="" />
+            <Input type="text" name="name" placeholder="Enter name" />
             <ErrWrapper>
               <ErrorMessage name="name" />
             </ErrWrapper>
           </InputLabel>
           <InputLabel>
             Number
-            <Input type="tel" name="number" placeholder="" />
+            <Input type="tel" name="number" placeholder="Enter number" />
             <ErrWrapper>
               <ErrorMessage name="number" />
             </ErrWrapper>

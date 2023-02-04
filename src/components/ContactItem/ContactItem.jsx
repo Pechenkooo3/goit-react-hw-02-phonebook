@@ -17,7 +17,7 @@ export default function ContactListItem({
   return (
     <MainWrapper>
       <Wrapper>
-               <ListItem>{name}:</ListItem>
+            <ListItem>{name}:</ListItem>
       </Wrapper>
       <NumberWrapper>
         <ListItem>{number}</ListItem>

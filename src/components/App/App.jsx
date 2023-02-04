@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
-
 import ContactList from 'components/ContactList';
 import ContactForm from 'components/ContactForm';
 import Filter from 'components/Filter';
@@ -8,7 +7,7 @@ import { Wrapper, Title, ContactsWrapper } from './App.styled';
 
 export default class App extends Component {
   state = {
-    contacts: [],
+    contacts: [  ],
     filter: '',
   };
 
