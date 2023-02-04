@@ -17,12 +17,12 @@ export default function ContactListItem({
   return (
     <MainWrapper>
       <Wrapper>
-            <ListItem>{name}:</ListItem>
+        <ListItem>{name}:</ListItem>
       </Wrapper>
       <NumberWrapper>
         <ListItem>{number}</ListItem>
         <ItemButton type="button" onClick={() => deleteContact(userId)}>
-          Delete 
+          Delete
         </ItemButton>
       </NumberWrapper>
     </MainWrapper>
